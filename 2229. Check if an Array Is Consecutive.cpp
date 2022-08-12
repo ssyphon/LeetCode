@@ -27,7 +27,7 @@ public:
             l = max(l, a - n + 1);
             h = min(h, a + n - 1);
             //a simple way to check for duplicates without extra space in an array that should span a range of n
-            nums[t % n] *= -1;
+            nums[a % n] *= -1;
         }
         
         return h - l == n - 1;
